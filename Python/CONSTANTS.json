@@ -1,0 +1,112 @@
+{
+    "SubjectID": 1,
+    "orderEnv": [
+        "RuleBased",
+        "RL"
+    ],
+    "ActionSpace": 2,
+    "StartState": "MIN",
+    "ATTR": [
+        "LocoMotion",
+        "Motion",
+        "Closeness",
+        "Large",
+        "Hairiness",
+        "Color"
+    ],
+    "rangeATTR": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        3
+    ],
+    "MaxATTR": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+    ],
+    "MaxSTRESS": 10,
+    "TargetSTRESS": 7,
+    "ListTargetStress": [
+        3,
+        7
+    ],
+    "ChangeStepATTR": [
+        -1,
+        1
+    ],
+    "PathUnity": "../Unity/SpiderUnity/Assets/Resources/PythonUnity.txt",
+    "DATABASE": "Database/test2",
+    "waitToUpdateSpider": 20,
+    "SignalLength": 80,
+    "SignalLengthEDA": 20,
+    "QLearning": {
+        "MAX_EPISODES": 2,
+        "MAX_TRY": 7,
+        "epsilon": 0.05,
+        "epsilon_decay": 0.999,
+        "learning_rate": 0.8,
+        "gamma": 0.8,
+        "alpha": 0.6
+    },
+    "RuleBased": {
+        "MAX_EPISODES": 2,
+        "MAX_TRY": 7
+    },
+    "SpiderAttr": {
+        "str": "Relaxing",
+        "Locomotion": 2,
+        "Motion": 1,
+        "Closeness": 0,
+        "Largness": 0,
+        "Hairiness": 1,
+        "Color": 1
+    },
+    "Bitalino": {
+        "macAddress": "00:21:06:BE:27:1A",
+        "samplingRate": 1000,
+        "batteryThreshold": 30
+    },
+    "PredictionModel": {
+        "filename_scaler": "Models/LDA_scaler.sav",
+        "filename_model": "Models/LDA_model.sav"
+    },
+    "EDA": {
+        "max_EDA": 20,
+        "base_EDA": 7.5709624796084825,
+        "index_color_min": [
+            140,
+            140,
+            140
+        ],
+        "index_color_max": [
+            150,
+            150,
+            150
+        ],
+        "subject_color_min": [
+            0,
+            125,
+            0
+        ],
+        "subject_color_max": [
+            0,
+            130,
+            0
+        ],
+        "frame_size": [
+            10,
+            100,
+            11,
+            1000
+        ],
+        "min_scale": 0,
+        "max_scale": 21
+    },
+    "Relaxing_Duration": 120
+}
